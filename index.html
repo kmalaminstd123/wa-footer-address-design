@@ -26,51 +26,8 @@
 <body>
 
 
-    <div class="container">
-        <div class="card p-4 shadow rounded-4">
-            <h4 class="mb-4">🎨 Gradient Generator</h4>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <label for="firstColor" class="form-label">First Color</label>
-                    <input type="color" class="form-control form-control-color" id="firstColor" value="#6366f1">
-                </div>
-
-                <div class="col-md-4">
-                    <label for="secondColor" class="form-label">Second Color</label>
-                    <input type="color" class="form-control form-control-color" id="secondColor" value="#a855f7">
-                </div>
-
-                <div class="col-md-4">
-                    <label for="textColor" class="form-label">Text Color</label>
-                    <input type="color" class="form-control form-control-color" id="textColor" value="#6366f1">
-                </div>
-
-                <div class="col-md-4">
-                    <label for="radientAngle" class="form-label">Gradient Angle</label>
-                    <input type="range" class="form-range" min="0" max="360" step="1" id="radientAngle" value="135">
-                    <div class="text-muted">Angle: <span id="angleVal">135</span>°</div>
-                </div>
-
-                <div class="col-md-4" style="opacity: 0;">
-                    <label for="opacity" class="form-label">Opacity</label>
-                    <input type="range" class="form-range" min="0" max="1" step="0.1" id="opacity" value="1">
-                    <div class="text-muted">Opacity: <span id="opacityVal">1</span></div>
-                </div>
-            </div>
-
-            <hr class="my-4">
-
-            <div class="bg-light p-3 rounded shadow-sm" id="outputPreview">
-            <h5 class="mb-3">Output</h5>
-            <p>First Color: <span id="outFirst">#6366f1</span></p>
-            <p>Second Color: <span id="outSecond">#a855f7</span></p>
-            <p>Gradient Angle: <span id="outAngle">135</span>°</p>
-            </div>
-        </div>
-    </div>
-
-    <footer style="background-color: rgb(35, 35, 35); padding: 84px 0; margin-top: 150px;">
+    <footer style="background-color: rgb(35, 35, 35); padding: 84px 0; margin-top: 350px;">
 
         <div class="container">
 
@@ -80,15 +37,20 @@
 
                     <div class="row">
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-3 col-sm-12">
                             <div class="all-offices-list text-dark">
+
                                 <div class="office-details-wrapper">
-                                    <div class="office-details">
+
+                                    <div class="office-details office-btn-click">
                                         <span><img src="https://worldacademy.uk/public/img/uk.png" alt=""></span> <span class="text-white">UK Registered Office</span>
                                     </div>
         
                                     <div class="office-address d-flex flex-column gap-3">
+                                        <button class="office-hov-cls ms-auto bg-transparent border-0"><i class="fa-solid fa-xmark"></i></button>
+                                        <h5>Uk Registered Office</h5>
                                         <div class="d-flex gap-3">
+                                            
                                             <span><i class="fa-solid fa-location-dot"></i></span> 
                                             <span>Office 2677A, 182-184 High Street North, East Ham, London E6 2JA. UK</span>
                                         </div>
@@ -106,7 +68,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-3 col-sm-12">
                             <div class="all-offices-list text-white">
                                 <div class="office-details-wrapper">
                                     <div class="office-details">
@@ -114,6 +76,10 @@
                                     </div>
         
                                     <div class="office-address d-flex flex-column gap-3">
+
+                                        <button class="office-hov-cls ms-auto bg-transparent border-0"><i class="fa-solid fa-xmark"></i></button>
+                                        <h5>Uk Registered Office</h5>
+
                                         <div class="d-flex gap-3">
                                             <span><i class="fa-solid fa-location-dot"></i></span> 
                                             <span>Unit# 13, 1st Floor, Heron House, 2 Heigham Road, London,E6 2JG, UK</span>
@@ -129,7 +95,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-3 col-sm-12">
                             <div class="all-offices-list text-white">
                                 <div class="office-details-wrapper">
                                     <div class="office-details">
@@ -137,6 +103,10 @@
                                     </div>
 
                                     <div class="office-address d-flex flex-column gap-3">
+
+                                        <button class="office-hov-cls ms-auto bg-transparent border-0"><i class="fa-solid fa-xmark"></i></button>
+                                        <h5>Uk Registered Office</h5>
+
                                         <div class="d-flex gap-3">
                                             <span><i class="fa-solid fa-location-dot"></i></span> 
                                             <span>	B-3A-02, Sky Park One City Jalan USJ 25/1B 47650 Subang Jaya Selangor. Malaysia</span>
@@ -152,7 +122,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-3 col-sm-12">
                             <div class="all-offices-list text-white">
                                 <div class="office-details-wrapper">
                                     <div class="office-details">
@@ -160,6 +130,10 @@
                                     </div>
 
                                     <div class="office-address d-flex flex-column gap-3">
+
+                                        <button class="office-hov-cls ms-auto bg-transparent border-0"><i class="fa-solid fa-xmark"></i></button>
+                                        <h5>Uk Registered Office</h5>
+                                        
                                         <div class="d-flex gap-3">
                                             <span><i class="fa-solid fa-location-dot"></i></span> 
                                             <span>	B-3A-02, Sky Park One City Jalan USJ 25/1B 47650 Subang Jaya Selangor. Malaysia</span>
@@ -175,7 +149,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-3 col-sm-12">
                             <div class="all-offices-list text-white">
                                 <div class="office-details-wrapper">
                                     <div class="office-details">
@@ -183,6 +157,10 @@
                                     </div>
 
                                     <div class="office-address d-flex flex-column gap-3">
+
+                                        <button class="office-hov-cls ms-auto bg-transparent border-0"><i class="fa-solid fa-xmark"></i></button>
+                                        <h5>Uk Registered Office</h5>
+
                                         <div class="d-flex gap-3">
                                             <span><i class="fa-solid fa-location-dot"></i></span> 
                                             <span>	B-3A-02, Sky Park One City Jalan USJ 25/1B 47650 Subang Jaya Selangor. Malaysia</span>
@@ -199,7 +177,7 @@
 
                         </div>
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-3 col-sm-12">
                             <div class="all-offices-list text-white">
                                 <div class="office-details-wrapper">
                                     <div class="office-details">
@@ -207,6 +185,10 @@
                                     </div>
 
                                     <div class="office-address d-flex flex-column gap-3">
+
+                                        <button class="office-hov-cls ms-auto bg-transparent border-0"><i class="fa-solid fa-xmark"></i></button>
+                                        <h5>Uk Registered Office</h5>
+                                        
                                         <div class="d-flex gap-3">
                                             <span><i class="fa-solid fa-location-dot"></i></span> 
                                             <span>	B-3A-02, Sky Park One City Jalan USJ 25/1B 47650 Subang Jaya Selangor. Malaysia</span>
@@ -225,22 +207,6 @@
                     </div>
                     
 
-                </div>
-
-                <div class="col-md-3 col-sm-12">
-
-                </div>
-
-                <div class="col-md-3 col-sm-12">
-
-                </div>
-
-                <div class="col-md-3 col-sm-12">
-
-                </div>
-
-                <div class="col-12">
-                    <img src="https://worldacademy.uk/img/SSLCommerz-Pay.webp" class="img-fluid" alt="">
                 </div>
 
             </div>
