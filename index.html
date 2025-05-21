@@ -26,6 +26,50 @@
 <body>
 
 
+    <div class="container">
+        <div class="card p-4 shadow rounded-4">
+            <h4 class="mb-4">🎨 Gradient Generator</h4>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <label for="firstColor" class="form-label">First Color</label>
+                    <input type="color" class="form-control form-control-color" id="firstColor" value="#6366f1">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="secondColor" class="form-label">Second Color</label>
+                    <input type="color" class="form-control form-control-color" id="secondColor" value="#a855f7">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="textColor" class="form-label">Text Color</label>
+                    <input type="color" class="form-control form-control-color" id="textColor" value="#6366f1">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="radientAngle" class="form-label">Gradient Angle</label>
+                    <input type="range" class="form-range" min="0" max="360" step="1" id="radientAngle" value="135">
+                    <div class="text-muted">Angle: <span id="angleVal">135</span>°</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="opacity" class="form-label">Opacity</label>
+                    <input type="range" class="form-range" min="0" max="1" step="0.1" id="opacity" value="1">
+                    <div class="text-muted">Opacity: <span id="opacityVal">1</span></div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="bg-light p-3 rounded shadow-sm" id="outputPreview">
+            <h5 class="mb-3">Output</h5>
+            <p>First Color: <span id="outFirst">#6366f1</span></p>
+            <p>Second Color: <span id="outSecond">#a855f7</span></p>
+            <p>Gradient Angle: <span id="outAngle">135</span>°</p>
+            </div>
+        </div>
+    </div>
+
     <footer style="background-color: rgb(35, 35, 35); padding: 84px 0; margin-top: 150px;">
 
         <div class="container">
@@ -35,6 +79,7 @@
                 <div class="col-12">
 
                     <div class="row">
+
                         <div class="col-md-3 col-sm-12">
                             <div class="all-offices-list text-dark">
                                 <div class="office-details-wrapper">
