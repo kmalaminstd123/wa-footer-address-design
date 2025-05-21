@@ -25,14 +25,14 @@
 
     // Set text color and opacity
     preview.style.color = txtColor;
-    preview.style.opacity = opac;
+    // preview.style.opacity = opac;
 
     // Show live output values
     outFirst.textContent = color1;
     outSecond.textContent = color2;
     outAngle.textContent = angleDeg;
     angleVal.textContent = angleDeg;
-    opacityVal.textContent = opac;
+    // opacityVal.textContent = opac;
   }
 
   // Add event listeners
