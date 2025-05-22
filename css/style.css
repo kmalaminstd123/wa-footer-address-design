@@ -1,26 +1,82 @@
 /*global css start*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ol, li{
+ol,
+li {
     list-style-type: none;
 }
 
 /*global css end*/
 
-/* footer css start */
+/* office address css start */
+
+#all-office-addr {
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    position: relative;
+    padding: 84px 0;
+}
+
+#all-office-addr h2 {
+    color: #716027;
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+#all-office-addr h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #716027;
+}
+
+.all-offices-list {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+.all-offices-list:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .office-details-wrapper {
     position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 15px rgba(113, 96, 39, 0.05);
+}
+
+.office-details-wrapper:hover {
+    box-shadow: 0 8px 25px rgba(113, 96, 39, 0.1);
+}
+
+
+.office-address h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .office-address {
@@ -29,16 +85,27 @@ ol, li{
     left: 0;
     background: linear-gradient(135deg, #98b6cc, #b4a261);
     color: #252222;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    backdrop-filter: blur(8px);
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    min-width: 300px; 
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 18px 20px;
+    border-radius: 12px;
+    z-index: 999;
+    min-width: 320px;
+    display: none;
+    animation: fadeInUp 0.3s ease;
+}
+
+/* Smooth show */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -52,18 +119,25 @@ ol, li{
     border-color: #f8f9fa transparent transparent transparent;
 }
 
-.office-details:hover + .office-address,
-.office-address:hover {
-    opacity: 1;
-    visibility: visible;
-}
-
 .office-details {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    background-color: #716027;
+    color: #fff;
+    font-weight: 500;
+
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+.office-details:hover {
+    background-color: #8e7a33;
 }
 
 .office-details img {
@@ -71,11 +145,19 @@ ol, li{
     height: auto;
 }
 
-.office-hov-cls{
+.office-hov-cls {
     width: fit-content;
     outline: none;
-    margin-bottom: -28px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #252222;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
 }
 
 
-/* footer css end */
+/* office address css end */
+
+
